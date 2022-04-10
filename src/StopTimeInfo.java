@@ -79,9 +79,8 @@ class StopTimesInfo {
             System.out.println(myStops.size());
 
             for(TripInfo s:myStops){
-                System.out.println("stopheadsign:"+s.stop_headsign);
-                System.out.printf("trip_id:%d,arrival_time:%s,departure_time:%s,stop_id:%d,stop_sequence:%d,"
-                                + "stop_headsign:%s,pickup_type:%d,drop_off_type:%d,shape_dist_traveled:%f%n",
+                System.out.printf("%n trip_id:%d,%n arrival_time:%s,%n departure_time:%s,%n stop_id:%d,%n stop_sequence:%d,"
+                                + "%n stop_headsign:%s,%n pickup_type:%d,%n drop_off_type:%d,%n shape_dist_traveled:%f%n",
                         s.trip_id,s.arrival_time,s.departure_time,s.stop_id,s.stop_sequence,s.stop_headsign,s.pickup_type,
                         s.drop_off_type,s.shape_dist_traveled);
             }

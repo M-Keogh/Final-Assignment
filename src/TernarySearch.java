@@ -9,11 +9,15 @@ public class TernarySearch {
 
      public static void main(String[] args) {
          TernarySearch TST = new TernarySearch("stops.txt");
-         printArrayList( TST.search("UNGLESS WAY FS GUILDFORD WAY WB") );
-         printArrayList( TST.search("J") );
-         printArrayList( TST.search("hi") );
-         printArrayList( TST.search("marine WAY") );
-         printArrayList( TST.search("ENG") );
+         printArrayList(TST.search("CLARENDON ST FS E 37 AVE NB"));
+         System.out.println();
+         printArrayList(TST.search("546"));
+         System.out.println();
+         printArrayList(TST.search("ENG"));
+         System.out.println();
+         printArrayList(TST.search("marine WAY"));
+         System.out.println();
+         printArrayList(TST.search("hi"));
     }
 
     public static void printArrayList(ArrayList<String> array) {

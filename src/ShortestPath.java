@@ -25,10 +25,10 @@ public class ShortestPath {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        System.out.println("Shortest distance from 35 to 8035: " + graph.shortestDistance(35, 8035));
+        System.out.println("Shortest distance from 0 to 0: " + graph.shortestDistance(0, 0));
         System.out.println("Shortest distance from 0 to 8035: " + graph.shortestDistance(0, 8035));
+        System.out.println("Shortest distance from 35 to 7465: " + graph.shortestDistance(35, 7465));
         System.out.println("Shortest distance from 646 to 381: " + graph.shortestDistance(646, 381));
-        System.out.println("Shortest distance from 0 to 8035: " + graph.shortestDistance(0, 0));
     }
 
     //creates an adjacency matrix for the graph
