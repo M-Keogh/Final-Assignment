@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ShortestPath {
     private String stop_timeFile, transfersFile;
-    private double[][] matrixGraph = new double[15000][15000];
+    private double[][] matrixGraph = new double[12500][12500];
 
     ShortestPath(String stop_timeFile, String transfersFile){
         this.stop_timeFile = stop_timeFile;

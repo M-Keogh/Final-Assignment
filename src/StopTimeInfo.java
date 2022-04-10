@@ -15,7 +15,7 @@ class StopTimesInfo {
         try {
 
             TripInfos = new ArrayList<>();
-            double shape_dist_traveled = -1;
+            double shape_dist_traveled;
             stopTimes = new File(stop_times);
             Scanner fileScanner = new Scanner(stopTimes);
             //skip first line
@@ -49,15 +49,10 @@ class StopTimesInfo {
     }
 
     // Sort by trip id
-    protected static Comparator<TripInfo> sortByTripId = new Comparator<TripInfo>() {
-        @Override
-        public int compare(TripInfo a, TripInfo b) {
-            return a.trip_id - b.trip_id;
-        }
-    };
+    protected static Comparator<TripInfo> sortByTripId = Comparator.comparingInt(a -> a.trip_id);
 
     //returns all Stops with the specified arrival time sorted by by trip_id
-    public List<TripInfo> getStopsInfo(String arrivalTime) {
+    public static List<TripInfo> getStopsInfo(String arrivalTime) {
         List<TripInfo> stopsByArrival = new ArrayList<>();
         Time arriveT = Time.valueOf(arrivalTime);
         String[] testTime = arrivalTime.split(":");
